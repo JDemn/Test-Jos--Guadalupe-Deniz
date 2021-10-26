@@ -1,0 +1,31 @@
+.encabezado__main {
+    background-color: white;
+    padding: 16px;
+}
+.encabezado__main :first-child {
+    display: inline-flex;
+    display: flex;
+    justify-content: space-between;
+    min-height: 26px;
+}
+h6 {
+    font-size: 17px;
+    font-weight: 400;
+}
+.circ {
+    position: relative;
+    margin-left: 12px;
+    border-radius: 50%;
+    background-color: red;
+    padding: 2px;
+    height: 12px;
+    width: 12px;
+    p {
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // margin: -25px 0 0 -25px;
+        text-align: center;
+        justify-content: center;
+    }
+}

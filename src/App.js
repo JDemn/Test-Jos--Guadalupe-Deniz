@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Body } from './components/bodyDetails/Body'
+import { BtnGral } from './components/buttons/BtnGral'
+import { Filter } from './components/encabezado/Filter'
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="containerPrincipal">
+      <div className="msj">
+          <Filter />
+          <hr/>
+          <h1>componente que tiene el msj</h1>
+      </div>
+      <div className="status">
+          <div className = 'head'>
+              <BtnGral />
+              <Body />
+          </div>
+      </div>
     </div>
-  );
+  )
 }
-
-export default App;

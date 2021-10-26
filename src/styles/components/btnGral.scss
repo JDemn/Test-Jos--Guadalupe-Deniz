@@ -1,0 +1,41 @@
+.bntGral__btnGral{
+    
+    width: 60vw!important; //beacause the other screen have the same width
+    display: flex;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 14px;
+}
+.bntGral__btnGral:first-child{
+    padding-bottom: 18px;
+    .unread {
+        background-color:#2BBBEF;
+        border: 0px solid;
+        border: 2px;
+        cursor: pointer;
+        color: $white;
+        margin-right: 1.6rem;
+    }
+    .delete, .spam {
+        cursor: pointer;
+        padding: 5px;
+        padding-left: 8px;
+        padding-right: 8px;
+        min-height: 1.8rem;
+        border: 0px solid;
+        border-radius: 2px;
+        min-width: 56px;
+        margin-right: 14px;
+    }
+    .delete {
+        background-color: $red;
+        color: $white;
+    }
+    .spam{
+        background-color: $white;
+        color: $gray/80%;
+        font-family: Helvetica;
+        border: 1px solid $gray/10%;
+    }
+    .delete :focus{}
+}
