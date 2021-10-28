@@ -41,17 +41,18 @@ main {
 .msj {
     background-color: #FFFF;
     width: 40%!important;
-    // box-shadow: 8px 8px 16px 1px rgba(106, 106, 106, .5)!important;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    // box-shadow: 8px 8px 15px 1px rgba(106, 106, 106, .5)!important;
 }
 .status {
     background-color: $gray;
+    width: 60%!important;
 }
 .msj,.status{
     height: 100vh;
     min-height: calc(100vh-119px);
     overflow-y: auto;
     overflow-x: hidden;
+    box-shadow: 0px 0px 8px 0px rgba(106, 106, 106, .5)!important;
     hr{
         margin: 0;
         border: .07px solid gray;

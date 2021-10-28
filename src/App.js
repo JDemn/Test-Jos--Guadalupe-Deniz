@@ -2,6 +2,9 @@ import React from 'react'
 import { Body } from './components/bodyDetails/Body'
 import { BtnGral } from './components/buttons/BtnGral'
 import { Filter } from './components/encabezado/Filter'
+import { Inputt } from './components/input/Inputt'
+import { Mail } from './components/maill/Mail'
+
 
 export const App = () => {
   return (
@@ -9,7 +12,8 @@ export const App = () => {
       <div className="msj">
           <Filter />
           <hr/>
-          <h1>componente que tiene el msj</h1>
+          <Inputt />
+          <Mail />
       </div>
       <div className="status">
           <div className = 'head'>

@@ -1,11 +1,35 @@
 .body__header {
+    position: relative;
+    .container {
+        display: flex;
+        position: absolute;
+        background-color: rgb(243, 243, 243);
+        bottom: 0px;
+        box-shadow: 0px .2px 1px .4px rgba(106, 106, 106, 0.5);
+        min-height: 30px;
+        width: 100%;
+        text-align: center;
+        justify-items: center;
+         .attach {
+             position: relative;
+             color: gray;
+             font-size: 18px;
+             justify-self: center;
+             margin-top: 4px;
+             margin-left: 1.2rem;
+         }
+    }
     p{
         margin-top: 1.2rem;
         margin-bottom: 1.5rem;
-        font-weight: 550;
+        font-weight: 500;
         letter-spacing: 0px;
+        color: $grayy;
+        font-size: 13px;
     }
     .head {
+        display: flex;
+        flex-direction: row;
         margin-top: 1.3rem;
         margin-bottom: 1.3rem;
         background-color: #FFFF;
@@ -15,5 +39,48 @@
         box-shadow: 0px .2px 1px .4px rgba(106, 106, 106, 0.5);
         padding: 5px;
         padding-left: 9px;
+        // align-self: center;
+        text-align: center;
+        justify-items: center;
+        .inbox, .business {
+            margin-left: 2rem;
+            border: 1px solid gray;
+            border-radius: 3px;
+            padding: 0px 10px 0px 12px;
+            max-height: 23px;
+            margin-top: 4px;
+            h6 {
+                font-size: 12px;
+                color: $grayy;
+            }
+        }
+    }
+    .head :first-child {
+        margin-top: 4px;
+        color: $grayy;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .body__content {
+        display: flex;
+        flex-wrap: wrap;
+        text-justify: auto;
+    }
+}
+
+@media(max-width : 579px) {
+    .body__header {
+        display: flex;
+        flex-direction: column;
+
+        .head {
+            display: flex;
+            flex-direction: column;
+            padding: 3px, 3px 3px 0px !important;
+            .inbox, .business {
+                margin-left: 0px;
+            }
+        }
     }
 }

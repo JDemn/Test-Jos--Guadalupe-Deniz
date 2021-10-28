@@ -1,0 +1,45 @@
+.input__search {
+    padding: 20px;
+    input {
+        background-color: #FFFF;
+        border: .2px solid $gray;
+        box-shadow: 0px 0px 2px .5px rgba(106,106,106,0.5);
+        border-radius: 2px;
+        width: 100%;
+        height: 22px;
+        letter-spacing: 0px;
+        
+        &::placeholder {
+            color: black;
+            font-weight: 400;
+            color: gray;
+            margin-left: 9px!important;
+            // opacity: ;
+        }
+    }
+    input:checked{
+        border: .2px solid $gray!important;
+    }
+    .search {
+        display: flex;
+        display: inline-flex;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        background-color: green;
+        .icon {
+            position: absolute;
+            right: 5px;
+            top: 3px;
+            .biSearch{
+                color: gray;
+                font-size: 16px;
+                font-weight: 600;
+            }    
+        }
+    }
+    // input:focus {
+    //     color: $primary;
+    // }
+}
