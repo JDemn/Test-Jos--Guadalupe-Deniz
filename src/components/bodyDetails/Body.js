@@ -4,9 +4,9 @@ import { Header } from './Header'
 export const Body = () => {
     return (
         <>
-        <div className = "body__bodyMain">
-            <Header />
-        </div>
+            <div className="body__bodyMain">
+                <Header />
+            </div>
         </>
     )
 }

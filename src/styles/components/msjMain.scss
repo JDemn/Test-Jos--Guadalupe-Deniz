@@ -2,6 +2,7 @@
     padding: 18px;
     border-top: 1.8px solid $gray;
     border-bottom: 1.2px solid $gray;
+    cursor: pointer;
     .date,.contenido {
         display: flex;
         display: inline-flex;
@@ -11,6 +12,7 @@
     }
     .attach {
         cursor: pointer;
-        background-color: $primary;
+        color: $grayy;
+        font-size: 18px!important;
     }
 }

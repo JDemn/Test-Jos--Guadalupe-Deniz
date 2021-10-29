@@ -1,0 +1,31 @@
+.msj__readed {
+    background-color: #F0F9FE;
+    border-top: 1.8px solid $gray;
+    border-bottom: 1.2px solid $gray;
+    cursor: pointer;
+    position: relative;
+    padding: 18px;
+    box-shadow: 20px 0px 0px 0px rgba(106, 106, 106, 0.5) !important;
+    // border-right: 1px solid rgba(106, 106, 106, 0.5);
+
+    .colilla {
+        position: absolute;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        width: 4px;
+        background-color: #2BBBEF;
+    }
+    .attach {
+        cursor: pointer;
+        color: $grayy;
+        font-size: 18px!important;
+    }
+    .date,.contenido {
+        display: flex;
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 100%;
+    }
+}

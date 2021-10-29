@@ -1,6 +1,7 @@
 import React from 'react'
 import data from '../../data/mail-data';
 import { FiPaperclip } from "react-icons/fi";
+import { Butons } from '../buttons/Butons';
 // import { useGetData } from '../../hooks/useGetData'
 
 export const Header = () => {
@@ -13,13 +14,16 @@ export const Header = () => {
                             <p>{elements.name}</p>
                             <div className="head">
                                 <h6>Tags</h6>
-                                <div className = "inbox"><h6>inbox</h6></div>
-                                <div className = "business"><h6>Business</h6></div>
+                                <div className="inbox"><h6>inbox</h6></div>
+                                <div className="business"><h6>Business</h6></div>
                             </div>
                             <div className="body__content">
                                 {elements.body}
                             </div>
-                            <div className="container"><FiPaperclip className="attach" /></div>
+                            <div className="container"><FiPaperclip className="attach" />
+                                <Butons />
+                            </div>
+
                         </div>
                     )
                 })

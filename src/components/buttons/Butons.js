@@ -2,8 +2,8 @@ import React from 'react'
 
 export const Butons = () => {
     return (
-        <div>
-            
+        <div className = "btns__btns">
+            <button className = "replay">Replay</button>
         </div>
     )
 }
